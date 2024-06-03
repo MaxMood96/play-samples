@@ -3,14 +3,14 @@ lazy val root = (project in file("."))
   .settings(
     name := """play-java-starter-example""",
     version := "1.0-SNAPSHOT",
-    scalaVersion := "2.13.8",
+    scalaVersion := "2.13.12",
     libraryDependencies ++= Seq(
       guice,
       // Test Database
-      "com.h2database" % "h2" % "1.4.199",
+      "com.h2database" % "h2" % "1.4.200",
       // Testing libraries for dealing with CompletionStage...
-      "org.assertj" % "assertj-core" % "3.14.0" % Test,
-      "org.awaitility" % "awaitility" % "4.0.1" % Test,
+      "org.assertj" % "assertj-core" % "3.24.2" % Test,
+      "org.awaitility" % "awaitility" % "4.2.0" % Test,
     ),
     javacOptions ++= Seq(
       "-encoding", "UTF-8",

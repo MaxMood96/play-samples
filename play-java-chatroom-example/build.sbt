@@ -2,10 +2,10 @@ lazy val root = (project in file("."))
   .enablePlugins(PlayJava)
   .settings(
     name := """play-java-chatroom-example""",
-    version := "2.8.x",
-    scalaVersion := "2.13.8",
+    version := "1.0-SNAPSHOT",
+    scalaVersion := "2.13.12",
     libraryDependencies ++= Seq(
-      "org.webjars" %% "webjars-play" % "2.8.0",
+      "org.webjars" %% "webjars-play" % "2.8.18",
       "org.webjars" % "flot" % "0.8.3",
       "org.webjars" % "bootstrap" % "3.4.1",
       guice,

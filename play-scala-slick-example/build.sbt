@@ -1,7 +1,7 @@
 lazy val root = (project in file("."))
   .settings(
     name := "play-scala-slick-examples",
-    version := "2.8.x"
+    version := "1.0-SNAPSHOT",
   )
   .aggregate(
     basicSample,
@@ -13,7 +13,7 @@ def sampleProject(name: String) =
   Project(s"$name-sample", file("samples") / name)
     .enablePlugins(PlayScala)
     .settings(
-      scalaVersion := "2.13.8",
+      scalaVersion := "2.13.12",
       scalacOptions ++= Seq(
         "-feature",
         "-deprecation",
@@ -21,9 +21,9 @@ def sampleProject(name: String) =
       ),
       libraryDependencies ++= Seq(
         guice,
-        "com.typesafe.play" %% "play-slick" % "5.0.0",
-        "com.typesafe.play" %% "play-slick-evolutions" % "5.0.0",
-        "com.h2database" % "h2" % "1.4.200",
+        "com.typesafe.play" %% "play-slick" % "5.1.0",
+        "com.typesafe.play" %% "play-slick-evolutions" % "5.1.0",
+        "com.h2database" % "h2" % "2.2.224",
         specs2 % Test,
       ),
       (Global / concurrentRestrictions) += Tags.limit(Tags.Test, 1)

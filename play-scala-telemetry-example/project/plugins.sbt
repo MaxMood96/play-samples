@@ -1,7 +1,7 @@
 // The Play plugin
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.16")
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.22")
 
-addSbtPlugin("com.lightbend.cinnamon" % "sbt-cinnamon" % "2.12.4")
+addSbtPlugin("com.lightbend.cinnamon" % "sbt-cinnamon" % "2.17.3")
 
 credentials += Credentials(Path.userHome / ".lightbend" / "commercial.credentials")
 
